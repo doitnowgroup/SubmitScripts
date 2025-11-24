@@ -8,6 +8,7 @@
 ml module load WRF/4.4.1-foss-2022b-dmpar
 export OMP_NUM_THREADS=1
 ###  The files will be allocated in the shared FS
+cd $HOME/benchmarks
 if [[ ! -f v4.4_bench_conus12km.tar.gz ]]; then
     wget https://www2.mmm.ucar.edu/wrf/users/benchmark/v44/v4.4_bench_conus12km.tar.gz
 fi
